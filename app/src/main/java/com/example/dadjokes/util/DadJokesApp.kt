@@ -1,4 +1,4 @@
-package com.borispuhacin.dadjokes.util
+package com.example.dadjokes.util
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

@@ -1,8 +1,8 @@
-package com.borispuhacin.dadjokes.di
+package com.example.dadjokes.di
 
-import com.borispuhacin.dadjokes.util.Constants
-import com.borispuhacin.dadjokes.network.JokesApi
-import com.borispuhacin.dadjokes.repository.JokesRepository
+import com.example.dadjokes.util.Constants
+import com.example.dadjokes.network.JokesApi
+import com.example.dadjokes.repository.JokesRepository
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module

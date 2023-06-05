@@ -1,4 +1,4 @@
-package com.borispuhacin.dadjokes.network
+package com.example.dadjokes.network
 
 data class JokeModel(
     val id: String,

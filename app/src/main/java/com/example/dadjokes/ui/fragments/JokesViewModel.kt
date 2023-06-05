@@ -1,8 +1,8 @@
-package com.borispuhacin.dadjokes.ui.fragments
+package com.example.dadjokes.ui.fragments
 
 import androidx.lifecycle.*
-import com.borispuhacin.dadjokes.network.JokeModel
-import com.borispuhacin.dadjokes.repository.JokesRepository
+import com.example.dadjokes.network.JokeModel
+import com.example.dadjokes.repository.JokesRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

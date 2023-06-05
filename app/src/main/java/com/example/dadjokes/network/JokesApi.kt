@@ -1,5 +1,6 @@
-package com.borispuhacin.dadjokes.network
+package com.example.dadjokes.network
 
+import com.example.dadjokes.network.JokeModel
 import retrofit2.http.GET
 import retrofit2.http.Headers
 

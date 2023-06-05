@@ -1,9 +1,9 @@
-package com.borispuhacin.dadjokes.ui
+package com.example.dadjokes.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.borispuhacin.dadjokes.R
+import com.example.dadjokes.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

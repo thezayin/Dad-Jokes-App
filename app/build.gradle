@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.borispuhacin.dadjokes'
+    namespace 'com.example.dadjokes'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.borispuhacin.dadjokes"
+        applicationId "com.example.dadjokes"
         minSdk 27
         targetSdk 33
         versionCode 1

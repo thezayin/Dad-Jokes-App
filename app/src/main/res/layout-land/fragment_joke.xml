@@ -12,68 +12,58 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="12dp"
+        android:contentDescription="@string/no_internet_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@drawable/ic_connection_error"
-        tools:visibility="visible"
-        android:contentDescription="@string/no_internet_image"/>
+        tools:visibility="gone" />
 
-    <ImageView
-        android:id="@+id/imageView_app_icon"
-        android:layout_width="60dp"
-        android:layout_height="90dp"
-        android:src="@drawable/dad_jokes_icon"
-        android:visibility="gone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="visible"
-        android:contentDescription="@string/app_logo_desc"/>
-
-    <TextView
-        android:id="@+id/textView_joke"
+    <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/quicksand_medium"
-        android:gravity="center"
-        android:textColor="@color/dark_blue"
-        android:textSize="24sp"
+        android:backgroundTint="@color/paper"
+        android:maxWidth="500dp"
+        android:maxHeight="250dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/hello_blank_fragment" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btn_share"
-        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:backgroundTint="@color/white"
-        android:drawableEnd="@drawable/ic_share"
-        android:fontFamily="@font/quicksand_medium"
-        android:paddingBottom="10dp"
-        android:text="@string/share"
-        android:textColor="@color/dark_blue"
-        android:textSize="24sp"
+        <TextView
+            android:id="@+id/textView_joke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:gravity="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            tools:text="@string/hello_blank_fragment" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btn_nextJoke"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ic_forward"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btn_nextJoke"
-        style="@style/Widget.Material3.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:drawableEnd="@drawable/ic_next"
-        android:fontFamily="@font/quicksand_medium"
-        android:paddingBottom="10dp"
-        android:text="@string/next_joke"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_share"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btn_share"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

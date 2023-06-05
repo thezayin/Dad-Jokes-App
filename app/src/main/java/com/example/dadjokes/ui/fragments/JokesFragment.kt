@@ -1,14 +1,14 @@
-package com.borispuhacin.dadjokes.ui.fragments
+package com.example.dadjokes.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import com.borispuhacin.dadjokes.R
-import com.borispuhacin.dadjokes.databinding.FragmentJokeBinding
+import com.example.dadjokes.R
+import com.example.dadjokes.databinding.FragmentJokeBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -45,16 +45,15 @@ class JokesFragment : Fragment() {
                 JokeApiStatus.ERROR -> {
                     binding.apply {
                         imageViewStatus.setImageResource(R.drawable.ic_connection_error)
-                        imageViewAppIcon.visibility = View.GONE
                         textViewJoke.text = getString(R.string.no_internet_connection)
                         btnNextJoke.visibility = View.GONE
                         btnShare.visibility = View.GONE
                     }
                 }
+
                 JokeApiStatus.LOADING -> binding.imageViewStatus.setImageResource(R.drawable.loading_animation)
                 else -> {
                     binding.imageViewStatus.visibility = View.GONE
-                    binding.imageViewAppIcon.visibility = View.VISIBLE
                 }
             }
         }

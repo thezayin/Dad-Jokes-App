@@ -1,7 +1,7 @@
-package com.borispuhacin.dadjokes.repository
+package com.example.dadjokes.repository
 
-import com.borispuhacin.dadjokes.network.JokeModel
-import com.borispuhacin.dadjokes.network.JokesApi
+import com.example.dadjokes.network.JokeModel
+import com.example.dadjokes.network.JokesApi
 import javax.inject.Inject
 import javax.inject.Singleton
 
